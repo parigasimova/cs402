@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>İstifadəçi Əlavə Et və Sil</title>
+</head>
+<body>
+    <h1>İstifadəçi Əlavə Et</h1>
+    <form id="addUserForm" action="/users" method="POST">
+        Ad: <input type="text" name="ad" required><br>
+        Soyad: <input type="text" name="soyad" required><br>
+        Parol: <input type="password" name="password" required><br>
+        Ünvan: <input type="text" name="adres" required><br>
+        <input type="submit" value="Əlavə Et">
+    </form>
+
+    <h1>İstifadəçi Sil</h1>
+    <form id="deleteUserForm" action="/users" method="DELETE">
+        İstifadəçi ID'si: <input type="number" name="id" required><br>
+        <input type="submit" value="Sil">
+    </form>
+    <script src="first.js"></script>
+</body>
+</html>
